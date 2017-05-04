@@ -3,7 +3,7 @@
 """ FCDR harmonisation modules
     Project:        H2020 FIDUCEO
     Author:         Arta Dilo \NPL MM
-    Reviewer:       
+    Reviewer:       Peter Harris \NPL MM, Sam Hunt \NPL ECO
     Date created:   24-01-2017
     Last update:    20-04-2017
     Version:        12.0
