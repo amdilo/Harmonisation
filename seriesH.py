@@ -34,9 +34,9 @@ import visFun as vis
 from plotHaR import plotSDfit as pltErrs
 
 # Set GLOBAL variables 
-datadir = "D:\Projects\FIDUCEO\Data" # main data folder in laptop
+#datadir = "D:\Projects\FIDUCEO\Data" # main data folder in laptop
 #datadir = "/home/ad6/Data" # main data folder in eoserver
-#datadir = "/group_workspaces/cems2/fiduceo/Data/Matchup_Simulated/Data" # in CEMS
+datadir = "/group_workspaces/cems2/fiduceo/Data/Matchup_Simulated/Data" # in CEMS
 mcrdir = pjoin(datadir, 'Results') # folder for MC trials results
 #pltdir = pjoin(datadir, 'Graphs') # folder for png images of graphs
 hvars = 12 # number of columns in the H data matrices of a series
@@ -209,9 +209,12 @@ if __name__ == "__main__":
     sslab = args[2] # 3rd argument: series label e.g. avhrr; currently not used
     
     # TODO: add 4th argument the list of netCDFs with harmonisation data
-    #filelist = args[3] # input from a text file ?
-    #filelist = ["m02_n15.nc","n15_n14.nc","n14_n12.nc","n12_n11.nc"] #,"n11_n10.nc","n10_n09.nc"] 
-    #filelist = ["m02_n19.nc","m02_n17.nc","m02_n15.nc","n19_n15.nc","n17_n15.nc"] 
+    #filelist = args[3] # input from a text file 
+    #filelist = ["m02_n19.nc","m02_n18.nc","m02_n17.nc","m02_n16.nc","m02_n15.nc",\
+    # "n19_n18.nc","n19_n17.nc","n19_n16.nc","n19_n15.nc",\
+    # "n18_n17.nc","n18_n16.nc","n18_n15.nc","n17_n16.nc","n17_n15.nc",\
+    # "n16_n15.nc","n15_n14.nc","n14_n12.nc","n12_n11.nc","n11_n10.nc",\
+    # "n10_n09.nc","n09_n08.nc","n08_n07.nc"] 
     filelist = ["m02_n19.nc","m02_n15.nc","n19_n15.nc","n15_n14.nc"] 
    
     # Time the execution of harmonisation
